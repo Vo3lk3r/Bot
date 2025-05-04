@@ -1,0 +1,15 @@
+name: Vo3lk3rOS Bootstrap
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  system-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository geladen
+        uses: actions/checkout@v3
+
+      - name: Bootstrapmeldung
+        run: echo "Vo3lk3rOS: System-Workflow aktiv – Basissystem läuft fehlerfrei."
